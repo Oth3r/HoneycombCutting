@@ -8,7 +8,8 @@
 		"Oth3r"
 	],
 	"contact": {
-		"homepage": "https://modrinth.com/datapack/honeycombcutting"
+		"homepage": "https://modrinth.com/datapack/honeycombcutting",
+		"issues": "https://github.com/Oth3r/HoneycombCutting/issues"
 	},
 	"license": "MIT",
 	"icon": "assets/honeycombcutting/icon.png",
