@@ -91,7 +91,7 @@ modrinth {
 	token = env.MODRINTH.value
 	projectId = 'vg9pC5A6'
 	versionNumber = project.mod_version
-	versionName = "${project.mod_version} [Fabric]"
+	versionName = "v${project.mod_version} [Fabric]"
 	uploadFile = remapJar
 	gameVersions = [project.minecraft_version]
 	loaders = ['fabric', 'quilt']
