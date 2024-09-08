@@ -94,7 +94,7 @@ modrinth {
 	versionName = "${project.mod_version} [Fabric]"
 	uploadFile = remapJar
 	gameVersions = [project.minecraft_version]
-	loaders = ['fabric']
+	loaders = ['fabric', 'quilt']
 	dependencies = [
 			new ModDependency('P7dR8mSH', 'required') // Creates a new required dependency on Fabric API
 	]
