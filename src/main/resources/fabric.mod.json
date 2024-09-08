@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "honeycombcutting",
+	"version": "${version}",
+	"name": "HoneycombCutting",
+	"description": "Adds a stonecutting recipe that cuts the Honeycomb block into 4 Honeycomb items.",
+	"authors": [
+		"Oth3r"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/datapack/honeycombcutting"
+	},
+	"license": "MIT",
+	"icon": "assets/honeycombcutting/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"one.oth3r.HoneycombCutting"
+		],
+		"fabric-datagen": [
+			"one.oth3r.HoneycombCuttingDataGenerator"
+		]
+	},
+	"mixins": [
+		"honeycombcutting.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.3",
+		"minecraft": ">=${min_minecraft_version} <=${minecraft_version}",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
