@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_honeycomb_block",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_honeycomb_block"
     ]
   ],
   "rewards": {
     "recipes": [
       "honeycombcutting:honeycomb_cutting"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }
