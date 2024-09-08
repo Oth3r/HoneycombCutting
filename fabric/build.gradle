@@ -88,7 +88,7 @@ publishing {
 
 import com.modrinth.minotaur.dependencies.ModDependency
 modrinth {
-	token = env.MODRINTH.value
+	token = env.MODRINTH.orElse("default null")
 	projectId = 'vg9pC5A6'
 	versionNumber = project.mod_version
 	versionName = "v${project.mod_version} [Fabric]"
