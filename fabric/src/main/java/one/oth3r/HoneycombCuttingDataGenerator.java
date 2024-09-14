@@ -9,6 +9,9 @@ import net.minecraft.data.server.recipe.SingleItemRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.RegistryWrapper;
+
+import java.util.concurrent.CompletableFuture;
 
 public class HoneycombCuttingDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -19,8 +22,8 @@ public class HoneycombCuttingDataGenerator implements DataGeneratorEntrypoint {
 	}
 
 	public static class ModRecipieProvider extends FabricRecipeProvider {
-		public ModRecipieProvider(FabricDataOutput output) {
-			super(output);
+		public ModRecipieProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+			super(output, registriesFuture);
 		}
 
 		@Override
