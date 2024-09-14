@@ -98,5 +98,5 @@ modrinth {
 	dependencies = [
 			new ModDependency('P7dR8mSH', 'required') // Creates a new required dependency on Fabric API
 	]
-	changelog = project.changelog
+	changelog = file('changelog.md').text
 }
